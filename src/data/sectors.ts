@@ -218,6 +218,7 @@ export const sectors: Sector[] = [
   //     }
   //   ]
   // },
+    // partie vétérinaire 
   {
     id: 'activites-veterinaires',
     name: 'Activités vétérinaires',
@@ -226,12 +227,21 @@ export const sectors: Sector[] = [
     questionnaire: []
   },
   {
+    id: 'activites-veterinaires',
+    name: 'test',
+    description: 'Cliniques vétérinaires, soins aux animaux',
+    icon: '🐾',
+    questionnaire: []
+  },
+  // partie agriculture 
+  {
     id: 'agriculture',
     name: 'Agriculture, sylviculture et pêche',
     description: 'Exploitation agricole, forestière et pêche',
     icon: '🌾',
     questionnaire: []
   },
+  // partie commerce 
   {
     id: 'commerce-gros-detail',
     name: 'Commerce en gros et de détail',
@@ -239,6 +249,7 @@ export const sectors: Sector[] = [
     icon: '🏪',
     questionnaire: []
   },
+  // partie construction 
   {
     id: 'construction-maintenance',
     name: 'Construction et maintenance',
@@ -246,6 +257,7 @@ export const sectors: Sector[] = [
     icon: '🔧',
     questionnaire: []
   },
+  // partie cuir 
   {
     id: 'cuir-tannerie',
     name: 'Cuir et tannerie',
@@ -253,6 +265,7 @@ export const sectors: Sector[] = [
     icon: '👜',
     questionnaire: []
   },
+  // partie education 
   {
     id: 'education',
     name: 'Éducation',
@@ -260,6 +273,7 @@ export const sectors: Sector[] = [
     icon: '🎓',
     questionnaire: []
   },
+  // partie electricité 
   {
     id: 'electricite-travaux',
     name: 'Électricité et travaux connexes',
@@ -267,6 +281,7 @@ export const sectors: Sector[] = [
     icon: '⚡',
     questionnaire: []
   },
+  // partie alimentation 
   {
     id: 'alimentation-boissons',
     name: 'Fabrication de denrées alimentaires et de boissons',
@@ -274,6 +289,7 @@ export const sectors: Sector[] = [
     icon: '🥫',
     questionnaire: []
   },
+  // partie gaz 
   {
     id: 'gaz-eau-electricite',
     name: 'Gaz, eau et électricité',
@@ -281,6 +297,7 @@ export const sectors: Sector[] = [
     icon: '💧',
     questionnaire: []
   },
+  // partie gestion des déchets 
   {
     id: 'gestion-dechets',
     name: 'Gestion des déchets',
@@ -288,6 +305,7 @@ export const sectors: Sector[] = [
     icon: '♻️',
     questionnaire: []
   },
+  // partie hotels 
   {
     id: 'hotels-restaurants',
     name: 'Hôtels, restaurants et restauration',
@@ -295,6 +313,7 @@ export const sectors: Sector[] = [
     icon: '🏨',
     questionnaire: []
   },
+  // partie immobilier 
   {
     id: 'immobilier',
     name: 'Immobilier',
@@ -302,6 +321,7 @@ export const sectors: Sector[] = [
     icon: '🏢',
     questionnaire: []
   },
+  // partie industrie 
   {
     id: 'industrie-manufacturiere',
     name: 'Industrie manufacturière',
@@ -309,6 +329,7 @@ export const sectors: Sector[] = [
     icon: '🏭',
     questionnaire: []
   },
+  // partie industries extractives 
   {
     id: 'industries-extractives',
     name: 'Industries extractives',
@@ -316,6 +337,7 @@ export const sectors: Sector[] = [
     icon: '⛏️',
     questionnaire: []
   },
+  // partie information 
   {
     id: 'information-communication',
     name: 'Information et communication',
@@ -323,6 +345,7 @@ export const sectors: Sector[] = [
     icon: '📱',
     questionnaire: []
   },
+  // partie outils 
   {
     id: 'outils-generiques',
     name: 'Outils génériques/risques propres',
@@ -330,6 +353,7 @@ export const sectors: Sector[] = [
     icon: '🔍',
     questionnaire: []
   },
+  // partie personnel 
   {
     id: 'personnel-services',
     name: 'Personnel et autres professions de service',
@@ -337,6 +361,7 @@ export const sectors: Sector[] = [
     icon: '👥',
     questionnaire: []
   },
+  // partie production 
   {
     id: 'production-vente-alimentaire',
     name: 'Production et vente de denrées alimentaires',
@@ -344,6 +369,7 @@ export const sectors: Sector[] = [
     icon: '🍞',
     questionnaire: []
   },
+  // partie salons 
   {
     id: 'salons-coiffure-esthetique',
     name: 'Salons de coiffure et esthétique',
@@ -351,6 +377,7 @@ export const sectors: Sector[] = [
     icon: '💇',
     questionnaire: []
   },
+  // partie santé 
   {
     id: 'sante-social',
     name: 'Santé humaine et activités des travailleurs sociaux',
@@ -358,6 +385,7 @@ export const sectors: Sector[] = [
     icon: '🏥',
     questionnaire: []
   },
+  // partie audiovisuel 
   {
     id: 'audiovisuel',
     name: 'Secteur audiovisuel',
@@ -365,6 +393,7 @@ export const sectors: Sector[] = [
     icon: '🎬',
     questionnaire: []
   },
+  // partie sécurité 
   {
     id: 'securite-privee',
     name: 'Sécurité privée',
@@ -372,6 +401,7 @@ export const sectors: Sector[] = [
     icon: '🔒',
     questionnaire: []
   },
+  // partie nettoyage 
   {
     id: 'services-nettoyage',
     name: 'Services de nettoyage',
@@ -379,6 +409,7 @@ export const sectors: Sector[] = [
     icon: '🧹',
     questionnaire: []
   },
+  // partie spectacle 
   {
     id: 'spectacle-vivant',
     name: 'Spectacle vivant',
@@ -386,6 +417,7 @@ export const sectors: Sector[] = [
     icon: '🎭',
     questionnaire: []
   },
+  // partie sports 
   {
     id: 'sports-loisirs',
     name: 'Sports et loisirs',
@@ -393,6 +425,7 @@ export const sectors: Sector[] = [
     icon: '🏊',
     questionnaire: []
   },
+  // partie transport 
   {
     id: 'transport-air-eau-rail',
     name: 'Transport (air, eau et rail)',
@@ -400,6 +433,7 @@ export const sectors: Sector[] = [
     icon: '✈️',
     questionnaire: []
   },
+  // partie transport 
   {
     id: 'transport-auto-logistique',
     name: 'Transport automobile, distribution et logistique',
@@ -407,6 +441,7 @@ export const sectors: Sector[] = [
     icon: '🚚',
     questionnaire: []
   },
+  // partie transport 
   {
     id: 'transport-public',
     name: 'Transports public/de passagers',
@@ -414,6 +449,7 @@ export const sectors: Sector[] = [
     icon: '🚌',
     questionnaire: []
   },
+  // partie travail 
   {
     id: 'bureau-administration',
     name: 'Travail de bureau et administration',
@@ -421,6 +457,7 @@ export const sectors: Sector[] = [
     icon: '📊',
     questionnaire: []
   },
+  // partie travail 
   {
     id: 'travail-bois',
     name: 'Travail du bois et activités connexes',
@@ -428,6 +465,7 @@ export const sectors: Sector[] = [
     icon: '🪵',
     questionnaire: []
   },
+  // partie travail 
   {
     id: 'travail-metal',
     name: 'Travail du métal',
@@ -435,6 +473,7 @@ export const sectors: Sector[] = [
     icon: '⚙️',
     questionnaire: []
   },
+  // partie travail 
   {
     id: 'vehicules-reparation',
     name: 'Véhicules à moteur, réparation et activités connexes',
