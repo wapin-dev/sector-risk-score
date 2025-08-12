@@ -26,10 +26,10 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
 
     const percentage = Math.round((totalScore / maxPossibleScore) * 100);
     
-    let riskLevel: 'low' | 'medium' | 'high';
-    if (percentage < 30) riskLevel = 'low';
-    else if (percentage < 70) riskLevel = 'medium';
-    else riskLevel = 'high';
+    let riskLevel: 'faible' | 'modéré' | 'élevé';
+    if (percentage < 30) riskLevel = 'faible';
+    else if (percentage < 70) riskLevel = 'modéré';
+    else riskLevel = 'élevé';
 
     // Grouper par catégorie
     const categoryMap = new Map<string, RiskCategory>();
@@ -69,9 +69,9 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
     };
   }, [answers, sector]);
 
-  const getRiskLevelInfo = (level: 'low' | 'medium' | 'high') => {
+  const getRiskLevelInfo = (level: 'faible' | 'modéré' | 'élevé') => {
     switch (level) {
-      case 'low':
+      case 'faible':
         return {
           icon: <CheckCircle className="w-6 h-6" />,
           color: 'success',
@@ -79,7 +79,7 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
           description: 'Votre niveau de risque est acceptable. Maintenez vos bonnes pratiques.',
           bgClass: 'bg-success/10 border-success/20'
         };
-      case 'medium':
+      case 'modéré':
         return {
           icon: <AlertTriangle className="w-6 h-6" />,
           color: 'warning',
@@ -87,7 +87,7 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
           description: 'Des améliorations sont recommandées pour réduire les risques.',
           bgClass: 'bg-warning/10 border-warning/20'
         };
-      case 'high':
+      case 'élevé':
         return {
           icon: <XCircle className="w-6 h-6" />,
           color: 'destructive',
@@ -147,9 +147,9 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         {results.categories.map((category) => {
           const categoryPercentage = Math.round((category.score / category.maxScore) * 100);
-          let categoryLevel: 'low' | 'medium' | 'high' = 'low';
-          if (categoryPercentage >= 70) categoryLevel = 'high';
-          else if (categoryPercentage >= 30) categoryLevel = 'medium';
+          let categoryLevel: 'faible' | 'modéré' | 'élevé' = 'faible';
+          if (categoryPercentage >= 70) categoryLevel = 'élevé';
+          else if (categoryPercentage >= 30) categoryLevel = 'modéré';
           
           const categoryInfo = getRiskLevelInfo(categoryLevel);
           
@@ -171,7 +171,7 @@ export const ResultsStep = ({ sector, answers, onBack, onRestart }: ResultsStepP
                     <span>{category.questions} question{category.questions > 1 ? 's' : ''}</span>
                   </div>
                   <Badge 
-                    variant={categoryLevel === 'low' ? 'default' : categoryLevel === 'medium' ? 'secondary' : 'destructive'}
+                    variant={categoryLevel === 'faible' ? 'default' : categoryLevel === 'modéré' ? 'secondary' : 'destructive'}
                     className="text-xs"
                   >
                     {categoryInfo.label}

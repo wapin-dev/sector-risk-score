@@ -1,4 +1,47 @@
-# Welcome to your Lovable project
+# Évaluation des Risques Professionnels
+
+Une application web pour évaluer les risques professionnels par secteur d'activité et générer un Document Unique d'Évaluation des Risques Professionnels (DUERP).
+
+## À propos du projet
+
+Cette application permet aux entreprises de toutes tailles d'évaluer les risques professionnels spécifiques à leur secteur d'activité. Elle propose :
+
+- Une navigation par catégories et secteurs d'activité
+- Des questionnaires spécialisés par secteur
+- Une évaluation des risques basée sur des critères pondérés
+- La génération automatique d'un Document Unique (DUERP)
+- Des recommandations personnalisées pour améliorer la sécurité au travail
+
+## État d'avancement
+
+### Fonctionnalités implémentées
+- ✅ Structure de base de l'application
+- ✅ Interface utilisateur avec Tailwind CSS et shadcn-ui
+- ✅ Catégorisation des secteurs d'activité
+- ✅ Navigation entre catégories et secteurs
+- ✅ Modèles de questionnaires pour certains secteurs
+
+### En cours de développement
+- 🔄 Complétion des questionnaires pour tous les secteurs
+- 🔄 Système d'évaluation des risques
+- 🔄 Génération du Document Unique (DUERP)
+- 🔄 Recommandations personnalisées
+
+### Prochaines étapes
+- 📝 Ajout de plus de secteurs et questionnaires spécialisés
+- 📝 Amélioration des algorithmes d'évaluation des risques
+- 📝 Exportation du DUERP en différents formats (PDF, Word)
+- 📝 Fonctionnalités de suivi et de mise à jour périodique
+
+## Informations techniques
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
 ## Project info
 
@@ -49,16 +92,6 @@ npm run dev
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
 ## How can I deploy this project?
 
